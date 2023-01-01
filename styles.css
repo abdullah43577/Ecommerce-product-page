@@ -102,6 +102,10 @@ main {
   padding-top: 50px;
 }
 
+.image_section {
+  position: relative;
+}
+
 .rendered_img {
   height: 350px;
   cursor: pointer;
@@ -130,7 +134,7 @@ main {
 .arrow-left,
 .arrow-right {
   position: absolute;
-  top: 30%;
+  top: 50%;
 }
 
 .arrow-left {
