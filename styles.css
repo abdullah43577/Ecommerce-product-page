@@ -23,7 +23,7 @@ header {
 }
 
 .burger {
-  display: none;
+  visibility: hidden;
 }
 
 .burger > div {
@@ -31,6 +31,7 @@ header {
   height: 3px;
   margin: 5px 0;
   background-color: hsl(220, 13%, 13%);
+  transition: transform 0.5s ease;
 }
 
 .navbar {
@@ -286,20 +287,18 @@ button:hover {
   }
 
   .menu_items {
-    display: none;
-  }
-
-  .menu_items.open {
     position: absolute;
     left: 0;
     background-color: #fff;
     width: 50%;
     height: 90vh;
     top: 10vh;
-    transform: translateX(100%);
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
   }
 
-  .menu_items.open li {
+  .menu_items li {
     display: block;
     padding: 20px 0;
     color: #000;
@@ -308,11 +307,25 @@ button:hover {
     padding-left: 20px;
     align-items: center;
     font-weight: 700;
+    opacity: 0;
+  }
+
+  @keyframes navLinksFade {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
   }
 
   .burger {
-    display: block;
+    visibility: visible;
     margin-right: 15px;
+    border: none;
   }
 
   .menu {
@@ -379,6 +392,22 @@ button:hover {
   footer {
     display: none;
   }
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.active .bar2 {
+  opacity: 0;
+}
+
+.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* footer section */
