@@ -234,6 +234,7 @@ main {
 
 .addtocart {
   display: flex;
+  height: 40px;
 }
 
 .addtocart > div {
