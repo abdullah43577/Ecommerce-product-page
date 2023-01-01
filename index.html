@@ -36,7 +36,7 @@
         </div>
 
         <div class="cart_sect">
-          <figcaption id="cart">
+          <figcaption class="cartBB">
             <img src="./images/icon-cart.svg" alt="cart icon" />
           </figcaption>
 
@@ -45,6 +45,27 @@
           </figcaption>
         </div>
       </nav>
+
+      <!-- rendered cart that's been selected -->
+      <div class="cart hide">
+        <div class="name">Cart</div>
+        <div class="addedCartContainer">
+          <figcaption class="thumb">
+            <img src="./images/image-product-1.jpg" alt="image product 1" />
+          </figcaption>
+
+          <div class="cartDetail">
+            <p class="detailName">Fall Limited Edition sneakers</p>
+            <p class="detailPrice">$125.00 x <span>3</span> <b>$375.00</b></p>
+          </div>
+
+          <figcaption class="trash">
+            <img src="./images/icon-delete.svg" alt="icon delete" />
+          </figcaption>
+        </div>
+
+        <button>Checkout</button>
+      </div>
     </header>
 
     <main>
@@ -62,31 +83,22 @@
         <div class="thumbnailsContainer">
           <figcaption class="thumbnails">
             <img
-              src="./images/image-product-1-thumbnail.jpg"
-              alt="image thumbnail 1"
+              src="./images/image-product-1.jpg"
+              alt="image product 1"
               class="active"
             />
           </figcaption>
 
           <figcaption class="thumbnails">
-            <img
-              src="./images/image-product-2-thumbnail.jpg"
-              alt="image thumbnail 2"
-            />
+            <img src="./images/image-product-2.jpg" alt="image product 2" />
           </figcaption>
 
           <figcaption class="thumbnails">
-            <img
-              src="./images/image-product-3-thumbnail.jpg"
-              alt="image thumbnail 3"
-            />
+            <img src="./images/image-product-3.jpg" alt="image product 3" />
           </figcaption>
 
           <figcaption class="thumbnails">
-            <img
-              src="./images/image-product-4-thumbnail.jpg"
-              alt="image thumbnail 4"
-            />
+            <img src="./images/image-product-4.jpg" alt="image product 4" />
           </figcaption>
         </div>
       </section>
@@ -122,6 +134,42 @@
       </section>
     </main>
 
+    <!-- modal window -->
+    <section class="image_section modal hide">
+      <img src="./images/icon-close.svg" alt="icon close" />
+      <div class="modalarrow modalarrow-left">
+        <img src="./images/icon-previous.svg" alt="icon previous" />
+      </div>
+      <div class="modalarrow modalarrow-right">
+        <img src="./images/icon-next.svg" alt="icon next" />
+      </div>
+      <figcaption class="rendered_img modalRendered">
+        <img src="./images/image-product-1.jpg" alt="image product one" />
+      </figcaption>
+
+      <div class="thumbnailsContainer">
+        <figcaption class="modal_thumbnails">
+          <img
+            src="./images/image-product-1.jpg"
+            alt="image product 1"
+            class="active"
+          />
+        </figcaption>
+
+        <figcaption class="modal_thumbnails">
+          <img src="./images/image-product-2.jpg" alt="image product 2" />
+        </figcaption>
+
+        <figcaption class="modal_thumbnails">
+          <img src="./images/image-product-3.jpg" alt="image product 3" />
+        </figcaption>
+
+        <figcaption class="modal_thumbnails">
+          <img src="./images/image-product-4.jpg" alt="image product 4" />
+        </figcaption>
+      </div>
+    </section>
+
     <footer>
       <div class="attribution">
         Challenge by
@@ -135,6 +183,8 @@
         >.
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/cart.js"></script>
+    <script src="./script/modal.js"></script>
   </body>
 </html>

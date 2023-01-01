@@ -20,6 +20,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .burger {
@@ -70,13 +71,13 @@ header {
   align-items: center;
 }
 
-#cart {
+.cartBB {
   width: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
 
-#cart > img {
+.cartBB > img {
   width: 100%;
 }
 
@@ -134,7 +135,7 @@ main {
 .arrow-left,
 .arrow-right {
   position: absolute;
-  top: 50%;
+  top: 45%;
 }
 
 .arrow-left {
@@ -262,7 +263,7 @@ button {
   color: #fff;
   font-size: 12px;
   border-radius: 5px;
-  height: 35px;
+  height: 40px;
   cursor: pointer;
 }
 
@@ -388,6 +389,7 @@ button:hover {
     width: 100%;
     margin-bottom: 5px;
     border: none;
+    border-radius: 0px;
   }
 
   button {
@@ -396,6 +398,10 @@ button:hover {
 
   footer {
     display: none;
+  }
+
+  .modalRendered {
+    width: 90vw;
   }
 }
 
@@ -413,6 +419,126 @@ button:hover {
 
 .active .bar3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.cart {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 5px;
+  height: auto;
+  position: absolute;
+  right: 150px;
+  top: 8vh;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.thumb {
+  width: 50px;
+}
+
+.thumb > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.name {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+  padding-bottom: 20px;
+}
+
+.addedCartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+.cart > button {
+  width: 250px;
+  margin-inline: auto;
+}
+
+.detailName,
+.detailPrice {
+  font-size: 14px;
+}
+
+.cartDetail {
+  margin-right: 5px;
+}
+
+b,
+.name {
+  color: hsl(220, 13%, 13%);
+  font-weight: bold;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modalarrow {
+  background-color: #fff;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modalarrow.modalarrow-left {
+  transform: translateX(-20px);
+}
+
+.modalarrow.modalarrow-right {
+  transform: translateX(20px);
+}
+
+.modalarrow-left,
+.modalarrow-right {
+  position: absolute;
+  top: 45%;
+}
+
+.modalarrow-left {
+  left: 0;
+}
+
+.modalarrow-right {
+  right: 0;
+}
+
+.modal_thumbnails {
+  width: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.modal_thumbnails > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+img[src="./images/icon-close.svg"] {
+  margin-bottom: 20px;
+  width: 20px;
+  cursor: pointer;
+  float: right;
 }
 
 /* footer section */
