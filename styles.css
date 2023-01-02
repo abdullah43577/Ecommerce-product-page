@@ -306,7 +306,7 @@ button:hover {
   color: hsl(26, 100%, 55%);
   background: linear-gradient(45deg, black, transparent);
   position: absolute;
-  top: 9vh;
+  top: 3vh;
   right: 0;
   transform: translateX(700px);
   transition: transform 1s ease;

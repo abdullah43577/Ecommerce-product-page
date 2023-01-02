@@ -22,8 +22,9 @@ cartDecrement.addEventListener("click", () => {
 const cartIcon = document.querySelector(".cartBB");
 const cart = document.querySelector(".cart");
 
-cartIcon.addEventListener("click", () => {
+cartIcon.addEventListener("click", (e) => {
   cart.classList.toggle("hide");
+  e.stopPropagation();
 });
 
 // dynamically adding contents to the cart
@@ -114,3 +115,9 @@ const checkOutFunc = function () {
     }, 2000);
   });
 };
+
+document.addEventListener("click", () => {
+  if (!cart.classList.contains("hide")) {
+    cart.classList.toggle("hide");
+  }
+});

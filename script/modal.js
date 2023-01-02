@@ -1,13 +1,15 @@
 "use strict";
 
 const main = document.querySelector("main");
+const modal = document.querySelector(".modal");
 
-rendered_image.addEventListener("click", () => {
+rendered_image.addEventListener("click", (e) => {
   main.style.background = "linear-gradient(45deg, black, transparent)";
   main.style.opacity = "20%";
   main.style.filter = "blur(5px)";
 
-  document.querySelector(".modal").classList.remove("hide");
+  modal.classList.remove("hide");
+  e.stopPropagation();
 });
 
 const rendered_image_modal = document.querySelector(".modalRendered img");
@@ -73,3 +75,17 @@ const iterator = function () {
     modal_thumbnails[modalIndex].classList.add("active");
   });
 };
+
+// document.addEventListener("click", () => {
+//   if (!modal.classList.contains("hide")) {
+//     modal.classList.toggle("hide");
+//   }
+// });
+
+main.addEventListener("click", (e) => {
+  main.style.background = "#fff";
+  main.style.opacity = "100%";
+  main.style.filter = "blur(0px)";
+
+  document.querySelector(".modal").classList.add("hide");
+});
