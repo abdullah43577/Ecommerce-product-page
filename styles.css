@@ -80,7 +80,7 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: green;
+  background-color: hsl(26, 100%, 55%);
   border-radius: 100%;
   height: 15px;
   width: 15px;
@@ -306,7 +306,7 @@ button:hover {
   color: hsl(26, 100%, 55%);
   background: linear-gradient(45deg, black, transparent);
   position: absolute;
-  top: 0;
+  top: 9vh;
   right: 0;
   transform: translateX(700px);
   transition: transform 1s ease;
