@@ -58,7 +58,7 @@ button.addEventListener("click", () => {
           </figcaption>
         </div>
 
-        <button>Checkout</button>`;
+        <button id="checkout">Checkout</button>`;
 
     const spanEl = document.querySelector("span");
     const total = document.querySelector("b");
@@ -68,6 +68,7 @@ button.addEventListener("click", () => {
     total.textContent = `$${result}.00`;
 
     trashCan();
+    checkOutFunc();
   } else {
     // error message to be displayed if there's no item number specified to be added
     message[1].classList.add("renderMsg");
@@ -91,5 +92,25 @@ const trashCan = function () {
     }, 3000);
 
     cart.classList.add("hide");
+  });
+};
+
+const checkOutFunc = function () {
+  const checkout = document.getElementById("checkout");
+
+  checkout.addEventListener("click", () => {
+    console.log("I'm being clicked");
+    cart.innerHTML = `
+                  <div class="name">Cart</div>
+                  <figcaption class="verified">
+                          <img src="./design/verified.gif" alt="an image">
+                      </figcaption>`;
+
+    notification.style.visibility = "hidden";
+
+    setTimeout(() => {
+      cart.innerHTML = `<div class="name">Cart</div>`;
+      cart.classList.add("hide");
+    }, 2000);
   });
 };

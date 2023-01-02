@@ -310,7 +310,6 @@ button:hover {
   right: 0;
   transform: translateX(700px);
   transition: transform 1s ease;
-  box-shadow: 0px 3px 0px 0px hsl(220, 14%, 75%);
 }
 
 .message1.render,
@@ -601,6 +600,24 @@ img[src="./images/icon-close.svg"] {
 
 .open {
   transform: translateX(0%);
+}
+
+.verified {
+  width: 80px;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  place-content: center;
+}
+
+.verified img {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .verified {
+    width: 40px;
+  }
 }
 
 /* footer section */
