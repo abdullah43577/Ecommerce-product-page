@@ -38,6 +38,7 @@
         <div class="cart_sect">
           <figcaption class="cartBB">
             <img src="./images/icon-cart.svg" alt="cart icon" />
+            <div class="notification">1</div>
           </figcaption>
 
           <figcaption id="avatar">
@@ -49,22 +50,6 @@
       <!-- rendered cart that's been selected -->
       <div class="cart hide">
         <div class="name">Cart</div>
-        <div class="addedCartContainer">
-          <figcaption class="thumb">
-            <img src="./images/image-product-1.jpg" alt="image product 1" />
-          </figcaption>
-
-          <div class="cartDetail">
-            <p class="detailName">Fall Limited Edition sneakers</p>
-            <p class="detailPrice">$125.00 x <span>3</span> <b>$375.00</b></p>
-          </div>
-
-          <figcaption class="trash">
-            <img src="./images/icon-delete.svg" alt="icon delete" />
-          </figcaption>
-        </div>
-
-        <button>Checkout</button>
       </div>
     </header>
 
@@ -127,9 +112,17 @@
             <div><img src="./images/icon-plus.svg" alt="icon plus" /></div>
           </div>
 
-          <button>
+          <button id="button">
             <img src="./images/icon-cart.svg" alt="icon cart" />Add to cart
           </button>
+        </div>
+
+        <div class="message message1">Items added to cart successfully!</div>
+        <div class="message message2">
+          Please select how many items to add, then try again
+        </div>
+        <div class="message message3">
+          Item(s) deleted from your cart successfully!!
         </div>
       </section>
     </main>

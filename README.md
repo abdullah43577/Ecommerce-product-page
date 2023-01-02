@@ -29,10 +29,15 @@ Users should be able to:
 
 ![](<./design/Screenshot%20(32).png>)
 ![](<./design/Screenshot%20(33).png>)
+![](<./design/Screenshot%20(34).png>)
+![](<./design/Screenshot%20(35).png>)
+![](<./design/Screenshot%20(36).png>)
+![](<./design/Screenshot%20(37).png>)
+![](<./design/Screenshot%20(38).png>)
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/ecommerce-product-page-t_QxOfkAB9)
 - Live Site URL: [Live site URL here](https://ecommerce-main.netlify.app/)
 
 ## My process

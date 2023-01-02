@@ -59,9 +59,6 @@ let index = 0;
 arrow[1].addEventListener("click", () => {
   index++;
 
-  rendered_image.src = images[index];
-  rendered_image.alt = alt[index];
-
   if (index > images.length - 1) index = 0;
 
   rendered_image.src = images[index];
@@ -70,9 +67,6 @@ arrow[1].addEventListener("click", () => {
 
 arrow[0].addEventListener("click", () => {
   index--;
-
-  rendered_image.src = images[index];
-  rendered_image.alt = alt[index];
 
   if (index < 0) index = images.length - 1;
 
