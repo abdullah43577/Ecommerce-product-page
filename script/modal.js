@@ -76,12 +76,6 @@ const iterator = function () {
   });
 };
 
-// document.addEventListener("click", () => {
-//   if (!modal.classList.contains("hide")) {
-//     modal.classList.toggle("hide");
-//   }
-// });
-
 main.addEventListener("click", (e) => {
   main.style.background = "#fff";
   main.style.opacity = "100%";
