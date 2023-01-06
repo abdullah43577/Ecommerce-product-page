@@ -27,13 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](<./design/Screenshot%20(32).png>)
-![](<./design/Screenshot%20(33).png>)
-![](<./design/Screenshot%20(34).png>)
-![](<./design/Screenshot%20(35).png>)
-![](<./design/Screenshot%20(36).png>)
-![](<./design/Screenshot%20(37).png>)
-![](<./design/Screenshot%20(38).png>)
+![](./design/Screenshot_14.png)
+![](./design/Screenshot_15.png)
+![](./design/Screenshot_16.png)
+![](./design/Screenshot_17.png)
 
 ### Links
 
